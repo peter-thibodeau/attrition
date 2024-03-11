@@ -6,8 +6,9 @@ The sightings are from the National UFO Reporting Center (NUFORC) which was acqu
 NUFORC allows the use of the data for non-commericial uses. There is a caveat on the website that states: "The National UFO Reporting Center makes no claims as to the validity of the information in any of these reports. Obvious hoaxes have been omitted, however most reports have been posted exactly as received in the author’s own words." The NUFORC website address is https://nuforc.org/.
 
 # Data Exploration
-- There are 1,470 records and 35 variables.
-- There are 0 nulls.
+- 1,470 records and 35 variables.
+- 0 nulls
+- 0 duplicates
 
 |Variable name|Datatype|Values|
 |:---|:---|:---|
