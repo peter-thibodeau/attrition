@@ -3,6 +3,7 @@ ibm = read.csv('/kaggle/input/ibm-attrition-rate/IBM-A.csv')
 
 # get unique values
 unique(ibm$JobSatisfaction)
+unique(ibm$Department)
 unique(ibm$MaritalStatus)
 unique(ibm$MaritalStatus)
 unique(ibm$PerformanceRating)
