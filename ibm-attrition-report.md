@@ -13,7 +13,7 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |:---|:---|:---|
 |  Age                     | int|18 to 60|
 |  Attrition               | chr| Yes, No|
-|  BusinessTravel          | chr| 'Travel_Rarely''Travel_Frequently''Non-Travel'|
+|  BusinessTravel          | chr| 'Travel_Rarely''Travel_Frequently''Non_Travel'|
 |  DailyRate               | int|$102 to $1,499|
 |  Department              | chr|'Sales''Research & Development''Human Resources'|
 |  DistanceFromHome        | int|1 to 29 miles|
@@ -31,8 +31,8 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  MaritalStatus           | chr|'Single''Married''Divorced'|
 |  MonthlyIncome           | int|$1,009 to $19,999|
 |  MonthlyRate              | int|$2,094 to $26,999|
-|  NumCompaniesWorked       | int|0 (IBM is only job) to 9 other jobs|
-|  Over18                   | chr|'Y', 'N'|
+|  NumCompaniesWorked       | int|0 (never worked at another company) to 9 other jobs|
+|  Over18                   | chr|'Y', 'N', all records are 'Y'|
 |  OverTime                 | chr|'Yes','No'|
 |  PercentSalaryHike        | int|11% to 25%|
 |  PerformanceRating        | int|1 Needs Improvement,2 Meets Expectations, 3 Exceeds Expectations, 4 Outstanding|
@@ -40,7 +40,7 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  StandardHours            | int|all records equal eighty|
 |  StockOptionLevel         | int |0 none to 3 highest|
 |  TotalWorkingYears        | int |0 to 40 years|
-|  TrainingTimesLastYear    | int |0 to 6 number of training sessions|
+|  TrainingTimesLastYear    | int |0 to 6 training sessions|
 |  WorkLifeBalance          | int |1 poor, 2 good, 3 very good, 4 excellent|
 |  YearsAtCompany           | int |0 to 40 years|
 |  YearsInCurrentRole       | int |0 to 18 years|
