@@ -11,7 +11,7 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 
 |Variable name|Datatype|Values|
 |:---|:---|:---|
-|  Age                     | int| min 18, max 60|
+|  Age                     | int|18 to 60|
 |  Attrition               | chr| Yes, No|
 |  BusinessTravel          | chr| 'Travel_Rarely''Travel_Frequently''Non-Travel'|
 |  DailyRate               | int|$102 to $1,499|
@@ -46,23 +46,6 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  YearsInCurrentRole       | int |0 to 18 years|
 |  YearsSinceLastPromotion  | int |0 to 15 years|
 |  YearsWithCurrManager     | int |0 to 17 years|
-
-## Variable Descriptions
-|Variable|Datatype|Description|Nulls|Notes|
-|:---|:---|:---|:---|:--|
-|Age|datetime|time of sighting, entered by user|0|1,207 have less than 10 chars which is NG|
-|Attrition|varchar|entered by the user|0|22,017 unique cities|
-||varchar|entered by the user|7,409||
-|country|varchar|entered by the user|12,365|6 unique countries|
-|shape|varchar|entered by the user|2,922|29 unique shapes|
-|duration (seconds)|integer|entered by the user|2||
-|duration (hours/min)|varchar|entered by the user|3,017||
-|comments|varchar|entered by the user|35||
-|date posted|datetime|entered by the user|0||
-|latitude|datetime|decimal|0|note 1|
-|longitude|datetime|decimal|0|note 1|
-
-Note 1: There are 1,494 records where latitude and longitude both equal zero, which is in the middle of the Indian Ocean; they will be removed.
 
 # Data Cleaning
 Several variable names are unrecognizable by SQL and have to be changed as shown in the following table:
