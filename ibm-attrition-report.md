@@ -36,10 +36,10 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  Over18                   | chr|'Y', 'N', all records are 'Y'|
 |  OverTime                 | chr|'Yes','No'|
 |  PercentSalaryHike        | int|11% to 25%|
-|  PerformanceRating        | int|1 Needs Improvement,2 Meets Expectations, 3 Exceeds Expectations, 4 Outstanding|
+|  PerformanceRating        | int|1 Needs Improvement, 2 Meets Expectations, 3 Exceeds Expectations, 4 Outstanding|
 |  RelationshipSatisfaction | int|1 poor, 2 good, 3 very good, 4 excellent|
 |  StandardHours            | int|all records equal eighty|
-|  StockOptionLevel         | int |0 none to 3 highest|
+|  StockOptionLevel         | int |0 (none) to 3 (highest)|
 |  TotalWorkingYears        | int |0 to 40 years|
 |  TrainingTimesLastYear    | int |0 to 6 training sessions|
 |  WorkLifeBalance          | int |1 poor, 2 good, 3 very good, 4 excellent|
