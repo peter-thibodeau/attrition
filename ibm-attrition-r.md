@@ -25,4 +25,8 @@ unique(ibm$StockOptionLevel)
 unique(ibm$TrainingTimesLastYear)
 unique(ibm$WorkLifeBalance)
 
-# 
+# count nulls
+sum(is.na(ibm))
+
+# count duplicates
+sum(duplicated(ibm))
