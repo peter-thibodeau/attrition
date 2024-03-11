@@ -1,9 +1,8 @@
 # Introduction
+The IBM HR Analytics Employee Attrition & Performance dataset is fictitious and widely used for analysis practice. Still, it is useful to understand how an analysis of it can improve the bottom line for comapanies and encourage programs to improve the workplace for employees.
 
 # Data Source
-The sightings are from the National UFO Reporting Center (NUFORC) which was acquired by Sigmond Axel and can be found at https://github.com/planetsig/ufo-reports. I downloaded it as a .csv file.  
-
-NUFORC allows the use of the data for non-commericial uses. There is a caveat on the website that states: "The National UFO Reporting Center makes no claims as to the validity of the information in any of these reports. Obvious hoaxes have been omitted, however most reports have been posted exactly as received in the author’s own words." The NUFORC website address is https://nuforc.org/.
+The dataset can be found at Kaggle, https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset). It is provided under the conditions of the Database Contents License (DbCL) v1.0.
 
 # Data Exploration
 - 1,470 records and 35 variables.
