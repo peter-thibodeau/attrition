@@ -49,12 +49,12 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  YearsWithCurrManager     | int |0 to 17 years|
 
 # Data Cleaning
-Remove leading and trailing spaces.
-Remove irrelevant data
-Standardize capitalization
-Clear formatting
-Fix errors
-Handle missing values
+- Remove leading and trailing spaces.
+- Remove irrelevant data
+- Standardize capitalization
+- Clear formatting
+- Fix errors
+- Handle missing values
 
 ## Filtering
   
