@@ -1,0 +1,1 @@
+UFO is a practice data analysis I did to strengthen my skillset. The IBM-attritiion-report.md file covers the source, description, and cleaning of the data. The IBM-attritiion-presentation.md file contains plots, observations and my conclusion of the anaylsis.
