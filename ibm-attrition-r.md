@@ -1,4 +1,4 @@
-# https://www.kaggle.com/code/peterthibodeau/notebook6e2b6dea64/edit
+https://www.kaggle.com/code/peterthibodeau/notebook6e2b6dea64/edit
 
 # create dataframe
 ibm = read.csv('/kaggle/input/ibm-attrition-rate/IBM-A.csv')
