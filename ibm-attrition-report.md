@@ -55,8 +55,3 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 - Clear formatting
 - Fix errors
 - Handle missing values
-
-## Filtering
-  
-## New Variables
-
