@@ -28,5 +28,9 @@ unique(ibm$WorkLifeBalance)
 # count nulls
 sum(is.na(ibm))
 
+# trim leading and trailing whitespace
+trimws(ibm, "l")
+trimws(ibm, "r")
+
 # count duplicates
 sum(duplicated(ibm))
