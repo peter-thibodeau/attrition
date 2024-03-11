@@ -49,21 +49,12 @@ NUFORC allows the use of the data for non-commericial uses. There is a caveat on
 |  YearsWithCurrManager     | int |0 to 17 years|
 
 # Data Cleaning
-Several variable names are unrecognizable by SQL and have to be changed as shown in the following table:
-
-|Variable|New name|
-|:---|:---|
-|duration (seconds|duration_sec|
-|duration (hours/min)|duration_hour_min|
-|date posted|date_posted|
-
-- Remove leading and trailing spaces.
-- Change strings to upper case to simplify SQL queries.
-- Remove duplicate records.
-- Remove punctuation marks in city.
-- Revove datetime strings that are less that 10 characters in length.
-- Extract date from datetime.
-- Extract time from datetime.
+Remove leading and trailing spaces.
+Remove irrelevant data
+Standardize capitalization
+Clear formatting
+Fix errors
+Handle missing values
 
 ## Filtering
   
