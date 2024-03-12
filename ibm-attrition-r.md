@@ -52,9 +52,9 @@ sum(duplicated(ibm))
   # 1. set text values to int for plotting
     ibm$pie <- with(ibm, ifelse(Attrition == 'Yes', 0, 1))
   # 2a. calc percent of yes and no
-    group_counts <- table(ibm$pie)
-    total_count <- sum(group_counts)
-    percentage_by_group1 <- (group_counts / total_count) * 100
+    group_counts_attrit <- table(ibm$pie)
+    total_coun_attrit <- sum(group_counts)
+    percentage_by_group1 <- (group_counts_attrit / total_coun_attrit) * 100
     percentage_by_group2 <- round(percentage_by_group1, digits = 1)
   # 2b. put in a dataframe
     attrit1 <- data.frame(
@@ -62,4 +62,21 @@ sum(duplicated(ibm))
     percent_quit = percentage_by_group2)
   # 3. plot percentages
   attrit2 <- ggplot(attrit1, aes(x="", y=percent_quit.Freq, fill=quit))+geom_bar(width = 1, stat = "identity")
-  pie <- attrit2 + coord_polar("y", start=0)
+  attrit_pie <- attrit2 + coord_polar("y", start=0)
+
+# attrition and gender
+  # 1. set text values to int for plotting
+    ibm$gndr <- with(ibm, ifelse(Attrition == 'Female', 1, 0))
+  # 2a. calc percent of yes and no
+    group_counts_gender <- table(ibm$gndr)
+    total_count_gender <- sum(group_counts)
+    percentage_by_group3 <- (group_counts_gender / total_count_gender) * 100
+    percentage_by_group4 <- round(percentage_by_group1, digits = 1)
+  # 2b. put in a dataframe
+    gender1 <- data.frame(
+    gender = c("Male","Female"),
+    percent_gender = percentage_by_group4)
+  # 3. plot percentages
+  gender2 <- ggplot(gender1, aes(x="", y=percent_gender.Freq, fill=gender))+geom_bar(width = 1, stat = "identity")
+  gender_pie <- gender2 + coord_polar("y", start=0)
+ 
