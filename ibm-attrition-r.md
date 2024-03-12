@@ -3,6 +3,18 @@ https://www.kaggle.com/code/peterthibodeau/notebook6e2b6dea64/edit
 # create dataframe
 ibm = read.csv('/kaggle/input/ibm-attrition-rate/IBM-A.csv')
 
+# get column names
+colnames(ibm)
+
+# explore data
+summary(ibm)
+str(ibm)
+head(ibm)
+tail(ibm)
+
+# count nulls
+sum(is.na(ibm))
+
 # get unique values for applicable variables
 unique(ibm$BusinessTravel)
 unique(ibm$Department)
@@ -25,8 +37,6 @@ unique(ibm$StockOptionLevel)
 unique(ibm$TrainingTimesLastYear)
 unique(ibm$WorkLifeBalance)
 
-# count nulls
-sum(is.na(ibm))
 
 # look for issues that need cleaning
 print(ibm)
