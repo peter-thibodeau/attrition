@@ -47,3 +47,17 @@ trimws(ibm, "r")
 
 # count duplicates
 sum(duplicated(ibm))
+
+# attrition
+  # 1. set text values to int for plotting
+    ibm$pie <- with(df, ifelse(attrition == 'Yes', 1, 0))
+  # 2a. calc percent of yes and no
+    group_counts <- table(ibm$pie)
+    total_count <- sum(group_counts)
+    percentage_by_group1 <- (group_counts / total_count) * 100
+    percentage_by_group2 <- round(percentage_by_group1, digits = 1)
+  # 2b. put in a dataframe
+    attrit <- data.frame(
+    quit = c("Yes","No"),
+    percent_quit = percentage_by_group)
+
