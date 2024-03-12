@@ -31,7 +31,6 @@ sum(is.na(ibm))
 # look for issues that need cleaning
 print(ibm)
 
-
 # trim leading and trailing whitespace
 trimws(ibm, "l")
 trimws(ibm, "r")
