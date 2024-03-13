@@ -37,7 +37,6 @@ unique(ibm$StockOptionLevel)
 unique(ibm$TrainingTimesLastYear)
 unique(ibm$WorkLifeBalance)
 
-
 # look for issues that need cleaning
 print(ibm)
 
@@ -49,34 +48,10 @@ trimws(ibm, "r")
 sum(duplicated(ibm))
 
 # attrition
-  # 1. set text values to int for plotting
-    ibm$pie <- with(ibm, ifelse(Attrition == 'Yes', 0, 1))
-  # 2a. calc percent of yes and no
-    group_counts_attrit <- table(ibm$pie)
-    total_coun_attrit <- sum(group_counts)
-    percentage_by_group1 <- (group_counts_attrit / total_coun_attrit) * 100
-    percentage_by_group2 <- round(percentage_by_group1, digits = 1)
-  # 2b. put in a dataframe
-    attrit1 <- data.frame(
-    quit = c("Yes","No"),
-    percent_quit = percentage_by_group2)
-  # 3. plot percentages
-  attrit2 <- ggplot(attrit1, aes(x="", y=percent_quit.Freq, fill=quit))+geom_bar(width = 1, stat = "identity")
-  attrit_pie <- attrit2 + coord_polar("y", start=0)
+attrit1 <- table(ibm$Attrition)
+attrit2 <- data.frame(d)
+quit = round(((attrit2[2,2]/nrow(ibm))*100), digits=1)
+stay = round(((attrit2[1,2]/nrow(ibm))*100), digits=1)
+attrit3 <- ggplot(attrit2, aes(x="", y=Freq, fill=Var1))+geom_bar(width = 1, stat = "identity") + coord_polar("y", start=0)
+  # Freq is column name in attrit2
 
-# attrition and gender
-  # 1. set text values to int for plotting
-    ibm$gndr <- with(ibm, ifelse(Attrition == 'Female', 1, 0))
-  # 2a. calc percent of yes and no
-    group_counts_gender <- table(ibm$gndr)
-    total_count_gender <- sum(group_counts)
-    percentage_by_group3 <- (group_counts_gender / total_count_gender) * 100
-    percentage_by_group4 <- round(percentage_by_group1, digits = 1)
-  # 2b. put in a dataframe
-    gender1 <- data.frame(
-    gender = c("Male","Female"),
-    percent_gender = percentage_by_group4)
-  # 3. plot percentages
-  gender2 <- ggplot(gender1, aes(x="", y=percent_gender.Freq, fill=gender))+geom_bar(width = 1, stat = "identity")
-  gender_pie <- gender2 + coord_polar("y", start=0)
- 
