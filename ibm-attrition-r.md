@@ -47,13 +47,37 @@ trimws(ibm, "r")
 # count duplicates
 sum(duplicated(ibm))
 
-# attrition
+# DFs that need calc col 1st
+ degree <- table(ibm$Education)
+ workplace <-table(ibm$EnvironmentSatisfaction)
+ attitude <- table(ibm$JobInvolvement)
+ like_job <- table(ibm$JobSatisfaction)
 
-# 1. put count of attrition values into contingency table
-attrit <- table(ibm$Attrition)
-trvl <- table(ibm$BusinessTravel)
+# DFs
+ attrition <- table(ibm$Attrition)
+ travel <- table(ibm$BusinessTravel)
+ dept <- table(ibm$Department)
+ major <- table(ibm$EducationField)
+ gender <- table(ibm$Gender)
+ job_title <- table(ibm$JobRole)
+ status <- table(ibm$MaritalStatus)
+ ot <- table(ibm$OverTime)
+ raise <- table(ibm$PercentSalaryHike)
+ perf_review <- table(ibm$PerformanceRating)
+ options <- table(ibm$StockOptionLevel)
+ training <- table(ibm$TrainingTimesLastYear)
+ life <- table(ibm$WorkLifeBalance)
 
-gndr <- table(ibm$Gender)
+# Numeric
+age <- table(ibm$Age)
+commute <- table(ibm$DistanceFromHome)
+salary <- table(ibm$MonthlyIncome) x 12
+experience <- table(ibm$TotalWorkingYears)
+company_tenure <- table(ibm$YearsAtCompany)
+job_tenure <- table(ibm$YearsInCurrentRole)
+last_promotion <- table(ibm$YearsSinceLastPromotion)
+years_with_manager <- table(ibm$YearsWithCurrManager)
+prev_jobs <- table(ibm$NumCompaniesWorked)
 
 
 # old
