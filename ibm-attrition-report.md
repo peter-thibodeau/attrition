@@ -17,7 +17,7 @@ The dataset can be found at Kaggle, https://www.kaggle.com/datasets/pavansubhash
 |  DailyRate               | int|$102 to $1,499|
 |  Department              | varchar|'Sales''Research & Development''Human Resources'|
 |  DistanceFromHome        | int|1 to 29 miles|
-|  Education               | int|1 highschool, 2 bachelors, 3 masters, 4 doctorate|
+|  Education               | int|1 highschool, 2 associates, 3 bachelors, 4 masters, 5 doctorate|
 |  EducationField          | varchar|'Life Sciences''Other''Medical''Marketing''Technical Degree''Human Resources'|
 |  EmployeeCount           | int|all records equal one|
 |  EmployeeNumber          | int|Unique identifier|
