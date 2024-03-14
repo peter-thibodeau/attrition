@@ -1,5 +1,5 @@
 # Introduction
-The IBM HR Analytics Employee Attrition & Performance dataset is fictitious and widely used for data analysis practice. Still, it is helpful to understand how an analysis of it can improve the bottom line for companies and encourage them to launch programs to improve the workplace for employees.
+The IBM HR Analytics Employee Attrition & Performance dataset is fictitious. Still, it is helpful to understand how an analysis of it can improve the bottom line for companies and encourage them to launch programs to improve the workplace for employees.
 
 # Data Source
 The dataset can be found at Kaggle, https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset). It is provided under the Database Contents License (DbCL) v1.0 conditions.
