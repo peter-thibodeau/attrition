@@ -48,10 +48,20 @@ trimws(ibm, "r")
 sum(duplicated(ibm))
 
 # attrition
-attrit1 <- table(ibm$Attrition)
-attrit2 <- data.frame(d)
+
+# 1. put count of attrition values into contingency table
+attrit <- table(ibm$Attrition)
+trvl <- table(ibm$BusinessTravel)
+
+gndr <- table(ibm$Gender)
+
+
+# old
+attrit2 <- data.frame(attrit1)
 quit = round(((attrit2[2,2]/nrow(ibm))*100), digits=1)
 stay = round(((attrit2[1,2]/nrow(ibm))*100), digits=1)
+
+
 attrit3 <- ggplot(attrit2, aes(x="", y=Freq, fill=Var1))+geom_bar(width = 1, stat = "identity") + coord_polar("y", start=0)
   # Freq is column name in attrit2
 
