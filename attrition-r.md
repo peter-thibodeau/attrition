@@ -47,6 +47,10 @@ trimws(attrition, "r")
 # count duplicates
 sum(duplicated(attrition))
 
+attrition <- transform( 
+  attrition, attrit = ifelse(Attrition == "No", 0, 1))
+attrition <- transform( 
+  attrition, gender = ifelse(Gender == "Male", 0, 1))
 coorelation <- data.frame(
     cyl= round(cor(attrition$Attrition, attrition$Gender), digits = 2),
     )
