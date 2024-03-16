@@ -47,6 +47,57 @@ trimws(attrition, "r")
 # count duplicates
 sum(duplicated(attrition))
 
+# convert varchar to integer
+attrition <- transform(attrition, attrit = ifelse(Attrition == "Yes", 1, 0))
+attrition <- transform(attrition, travel =
+    case_when(
+        BusinessTravel == "Non_Travel" ~ '1',
+        BusinessTravel == "Travel_Rarely" ~ '2',
+        BusinessTravel == "Travel_Frequently" ~ '3',
+        TRUE ~ '0'
+))
+attrition <- transform(attrition, department =
+    case_when(
+        Department == "Sales" ~ '1',
+        Department == "Research & Development" ~ '2',
+        Department == "Human Resources" ~ '3',
+        TRUE ~ '0'
+))
+attrition <- transform(attrition, major =
+    case_when(
+        EducationField == "Life Sciences" ~ '1',
+        EducationField == "Other" ~ '2',
+        EducationField == "Medical" ~ '3',
+        EducationField == "Marketing" ~ '4',
+        EducationField == "Technical Degree" ~ '5',
+        EducationField == "Human Resources" ~ '6',
+        TRUE ~ '0'
+))
+attrition <- transform(attrition, gender = ifelse(Gender == "Male", 1, 2))
+attrition <- transform(attrition, title =
+    case_when(
+        JobRole == "Sales Executive" ~ '1',
+        JobRole == "Research Scientist" ~ '2',
+        JobRole == "Laboratory Technician" ~ '3',
+        JobRole == "Manufacturing Director" ~ '4',
+        JobRole == "Healthcare Representative" ~ '5',
+        JobRole == "Manager" ~ '6',
+        JobRole == "Research Director" ~ '7',
+        JobRole == "Human Resources" ~ '8',
+        TRUE ~ '0'
+))
+attrition <- transform(attrition, marital =
+    case_when(
+        MaritalStatus == "Single" ~ '1',
+        MaritalStatus == "Married" ~ '2',
+        MaritalStatus == "Divorced" ~ '3',
+        TRUE ~ '0'
+))
+attrition <- transform(attrition, overtime = ifelse(OverTime == "Yes", 1, 0))
+
+
+
+
 attrition <- transform( 
   attrition, attrit = ifelse(Attrition == "No", 0, 1))
 attrition <- transform( 
